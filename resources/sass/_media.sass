@@ -1,0 +1,263 @@
+@import "vars"
+
+//Large: ≥1199px
++media-breakpoint-down(lg)
+
+	.teacher
+		&-photo
+			min-width: 200px
+			max-width: 200px
+	
+	.program
+		&-info
+			padding: 0
+
+	.promo
+		&__title
+			font-size: 32px
+			line-height: 44px
+
+//Medium: ≥991px
++media-breakpoint-down(md)
+	.nav
+		&-mob
+			overflow: hidden
+			height: 100%
+			max-height: 0
+			transition: all ease-out .3s
+			&.open
+				max-height: 400px
+		&-list
+			flex-direction: column
+			align-items: center
+			margin-top: 20px
+			&__item
+				& + &
+					margin-top: 20px
+		&__phone
+			float: none
+			margin: 20px auto 0
+	
+	.head
+		&__subtitle
+			margin-bottom: 20px
+		&__image
+			max-width: 70%
+	
+	.about
+		&__title
+			margin-left: 0
+	
+	.teachers
+		&__title
+			&::before
+				font-size: 90px
+				line-height: 80px
+		&-slider
+			.slick-list
+				padding: 35px !important
+
+	.program
+		margin-bottom: 40px
+
+	.programs
+		&__title
+			&::before
+				font-size: 90px
+				line-height: 80px
+		&__subtitle
+			margin-top: 40px
+
+	.promo
+		&__title
+			font-size: 26px
+			line-height: 44px
+		&__text
+			font-size: 20px
+			line-height: 30px
+	
+	.partners
+		&__title
+			&::before
+				font-size: 90px
+				line-height: 80px
+	
+	.faq
+		&__title
+			&::before
+				font-size: 90px
+				line-height: 80px
+	
+	.foot
+		&__title
+			&::before
+				font-size: 60px
+
+//Small: ≥767px
++media-breakpoint-down(sm)
+	.head
+		max-height: inherit
+		&__image
+			position: static
+			max-width: 100%
+			margin-bottom: 20px
+		&__wrap
+			padding-top: 0
+			padding-bottom: 0
+			margin-top: 20px
+			&::before
+				display: none
+	
+	.about
+		&__video
+			height: auto
+		&__title
+			&:before
+				top: -90px
+				left: 0
+				font-size: 100px
+				line-height: 100px
+		&__time
+			&:before
+				width: 100%
+		&__note
+			font-size: 24px
+
+	.other
+		&__text
+			margin-bottom: 20px
+		&__image
+			margin: 0 auto
+	
+	.teachers
+		&__title
+			&::before
+				font-size: 70px
+	
+	.teacher
+		padding: 30px
+		flex-direction: column
+		&-photo
+			width: fit-content
+			margin-bottom: 40px
+			&::before
+				left: inherit
+				right: -30px
+				top: -10px
+
+	.programs
+		&__title
+			&::before
+				font-size: 70px
+		&-menu
+			flex-direction: column
+			&__item
+				margin-right: auto
+				margin-left: auto
+				& + &
+					margin-top: 20px
+					margin-left: auto
+		&__subtitle
+			&::before, &::after
+				display: none
+	
+
+	.promo
+		&-slider
+			&__slide
+				padding-bottom: 35px
+				&::before
+					height: 100%
+		&__title
+			text-align: center
+			margin-top: 40px
+		&__text
+			margin: 0 auto 40px
+	
+	.partners
+		&__title
+			&::before
+				font-size: 70px
+	
+	.faq
+		&__title
+			&::before
+				font-size: 70px
+	
+	.foot
+		&__map
+			margin-top: 40px
+
+//Extra small: ≥575px
++media-breakpoint-down(xs)
+	.head
+		padding: 50px 0
+		&__subtitle
+			font-size: 24px
+			line-height: 32px
+		&__title
+			font-size: 24px
+			line-height: 32px
+		&__text
+			font-size: 22px
+			line-height: 30px
+
+	.other
+		&__title
+			font-size: 30px
+			line-height: 38px
+	
+	.teachers
+		padding: 50px 0
+		&__title
+			text-align: center
+			&::before
+				font-size: 50px
+				transform: translateY(0)
+				left: 0
+				right: 0
+				margin: auto
+		&-slider
+			.slick-list
+				padding: 20px 10px !important
+	
+	.programs
+		&__title
+			&::before
+				font-size: 50px
+				transform: translateY(0)
+
+	.partners
+		padding: 50px 0
+		&__title
+			&::before
+				font-size: 50px
+				transform: translateY(0)
+		&__line
+			max-width: 260px
+	
+	.faq
+		padding: 50px 0
+		&__title
+			&::before
+				font-size: 50px
+				transform: translateY(0)
+		&-content
+			&__title
+				i
+					margin-right: 15px
+			&__answer
+				padding: 20px
+	
+	.foot
+		padding: 50px 0
+		&__title
+			text-align: center
+			margin-bottom: 80px
+			&::before
+				font-size: 50px
+				transform: translateY(0)
+				left: 0
+				right: 0
+				margin: auto
+
